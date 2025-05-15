@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1263742DC1268B002D46A5 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263732DC1268B002D46A5 /* LoginInteractor.swift */; };
+		8C1263762DC126BE002D46A5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263752DC126BE002D46A5 /* LoginPresenter.swift */; };
+		8C1263782DC56D02002D46A5 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263772DC56D02002D46A5 /* LoginModels.swift */; };
+		8C12637A2DC90829002D46A5 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263792DC90828002D46A5 /* LoginRouter.swift */; };
+		8C12637C2DCCEDC3002D46A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12637B2DCCEDC3002D46A5 /* HomeViewController.swift */; };
+		8C1263802DCD0706002D46A5 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12637F2DCD0706002D46A5 /* LoginBuilder.swift */; };
+		8C1263872DCE8323002D46A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263862DCE8323002D46A5 /* RegisterViewController.swift */; };
+		8C1263892DCE8623002D46A5 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1263882DCE8623002D46A5 /* RegisterInteractor.swift */; };
+		8C90FC002D958F91004FD5D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FBFF2D958F91004FD5D5 /* AppDelegate.swift */; };
+		8C90FC022D958F91004FD5D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FC012D958F91004FD5D5 /* SceneDelegate.swift */; };
+		8C90FC092D958F99004FD5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C90FC082D958F99004FD5D5 /* Assets.xcassets */; };
+		8C90FC0C2D958F99004FD5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C90FC0A2D958F99004FD5D5 /* LaunchScreen.storyboard */; };
+		8C90FC172D958F9A004FD5D5 /* We_Travel_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FC162D958F9A004FD5D5 /* We_Travel_PlusTests.swift */; };
+		8C90FC212D958F9A004FD5D5 /* We_Travel_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FC202D958F9A004FD5D5 /* We_Travel_PlusUITests.swift */; };
+		8C90FC232D958F9A004FD5D5 /* We_Travel_PlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FC222D958F9A004FD5D5 /* We_Travel_PlusUITestsLaunchTests.swift */; };
+		8C90FC322D9599AB004FD5D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C90FC312D9599AB004FD5D5 /* GoogleService-Info.plist */; };
+		8C90FC352D959B85004FD5D5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC342D959B85004FD5D5 /* FirebaseAnalyticsSwift */; };
+		8C90FC372D959B85004FD5D5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC362D959B85004FD5D5 /* FirebaseAuth */; };
+		8C90FC392D959B85004FD5D5 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC382D959B85004FD5D5 /* FirebaseCrashlytics */; };
+		8C90FC3B2D959B85004FD5D5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC3A2D959B85004FD5D5 /* FirebaseDatabaseSwift */; };
+		8C90FC3D2D959B85004FD5D5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC3C2D959B85004FD5D5 /* FirebaseFirestoreSwift */; };
+		8C90FC3F2D959B85004FD5D5 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC3E2D959B85004FD5D5 /* FirebaseInAppMessaging-Beta */; };
+		8C90FC412D959B85004FD5D5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC402D959B85004FD5D5 /* FirebaseMessaging */; };
+		8C90FC442D959D83004FD5D5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC432D959D83004FD5D5 /* GoogleSignInSwift */; };
+		8C90FC472D959F71004FD5D5 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C90FC462D959F71004FD5D5 /* MessageKit */; };
+		8C90FC492D96E6A1004FD5D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90FC482D96E6A1004FD5D5 /* LoginViewController.swift */; };
+		8CFFC2472DD5123F009A2BEE /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFC2462DD5123F009A2BEE /* LoginProtocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C90FC132D958F99004FD5D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C90FBF42D958F91004FD5D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C90FBFB2D958F91004FD5D5;
+			remoteInfo = "We Travel Plus";
+		};
+		8C90FC1D2D958F9A004FD5D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C90FBF42D958F91004FD5D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C90FBFB2D958F91004FD5D5;
+			remoteInfo = "We Travel Plus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C1263732DC1268B002D46A5 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		8C1263752DC126BE002D46A5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8C1263772DC56D02002D46A5 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		8C1263792DC90828002D46A5 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		8C12637B2DCCEDC3002D46A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8C12637F2DCD0706002D46A5 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		8C1263862DCE8323002D46A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8C1263882DCE8623002D46A5 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		8C90FBFC2D958F91004FD5D5 /* We Travel Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "We Travel Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C90FBFF2D958F91004FD5D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C90FC012D958F91004FD5D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C90FC082D958F99004FD5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C90FC0B2D958F99004FD5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C90FC0D2D958F99004FD5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C90FC122D958F99004FD5D5 /* We Travel PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "We Travel PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C90FC162D958F9A004FD5D5 /* We_Travel_PlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = We_Travel_PlusTests.swift; sourceTree = "<group>"; };
+		8C90FC1C2D958F9A004FD5D5 /* We Travel PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "We Travel PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C90FC202D958F9A004FD5D5 /* We_Travel_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = We_Travel_PlusUITests.swift; sourceTree = "<group>"; };
+		8C90FC222D958F9A004FD5D5 /* We_Travel_PlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = We_Travel_PlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C90FC312D9599AB004FD5D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C90FC482D96E6A1004FD5D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8CFFC2462DD5123F009A2BEE /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C90FBF92D958F91004FD5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C90FC3D2D959B85004FD5D5 /* FirebaseFirestoreSwift in Frameworks */,
+				8C90FC3B2D959B85004FD5D5 /* FirebaseDatabaseSwift in Frameworks */,
+				8C90FC412D959B85004FD5D5 /* FirebaseMessaging in Frameworks */,
+				8C90FC472D959F71004FD5D5 /* MessageKit in Frameworks */,
+				8C90FC442D959D83004FD5D5 /* GoogleSignInSwift in Frameworks */,
+				8C90FC392D959B85004FD5D5 /* FirebaseCrashlytics in Frameworks */,
+				8C90FC352D959B85004FD5D5 /* FirebaseAnalyticsSwift in Frameworks */,
+				8C90FC372D959B85004FD5D5 /* FirebaseAuth in Frameworks */,
+				8C90FC3F2D959B85004FD5D5 /* FirebaseInAppMessaging-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC0F2D958F99004FD5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC192D958F9A004FD5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C12637D2DCCFF66002D46A5 /* NewPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewPost;
+			sourceTree = "<group>";
+		};
+		8C12637E2DCCFF7A002D46A5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8C1263812DCE4F75002D46A5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8C1263862DCE8323002D46A5 /* RegisterViewController.swift */,
+				8C1263882DCE8623002D46A5 /* RegisterInteractor.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8C1263842DCE7DB3002D46A5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8C1263852DCE7DC5002D46A5 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		8C90FBF32D958F91004FD5D5 = {
+			isa = PBXGroup;
+			children = (
+				8C90FBFE2D958F91004FD5D5 /* We Travel Plus */,
+				8C90FC152D958F99004FD5D5 /* We Travel PlusTests */,
+				8C90FC1F2D958F9A004FD5D5 /* We Travel PlusUITests */,
+				8C90FBFD2D958F91004FD5D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C90FBFD2D958F91004FD5D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C90FBFC2D958F91004FD5D5 /* We Travel Plus.app */,
+				8C90FC122D958F99004FD5D5 /* We Travel PlusTests.xctest */,
+				8C90FC1C2D958F9A004FD5D5 /* We Travel PlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C90FBFE2D958F91004FD5D5 /* We Travel Plus */ = {
+			isa = PBXGroup;
+			children = (
+				8C1263852DCE7DC5002D46A5 /* Chats */,
+				8C1263842DCE7DB3002D46A5 /* Configurations */,
+				8C1263812DCE4F75002D46A5 /* Register */,
+				8C12637E2DCCFF7A002D46A5 /* Profile */,
+				8C12637D2DCCFF66002D46A5 /* NewPost */,
+				8C90FC4B2D96E6F4004FD5D5 /* Home */,
+				8C90FC4A2D96E6BD004FD5D5 /* Login */,
+				8C90FBFF2D958F91004FD5D5 /* AppDelegate.swift */,
+				8C90FC012D958F91004FD5D5 /* SceneDelegate.swift */,
+				8C90FC082D958F99004FD5D5 /* Assets.xcassets */,
+				8C90FC0A2D958F99004FD5D5 /* LaunchScreen.storyboard */,
+				8C90FC0D2D958F99004FD5D5 /* Info.plist */,
+				8C90FC312D9599AB004FD5D5 /* GoogleService-Info.plist */,
+			);
+			path = "We Travel Plus";
+			sourceTree = "<group>";
+		};
+		8C90FC152D958F99004FD5D5 /* We Travel PlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C90FC162D958F9A004FD5D5 /* We_Travel_PlusTests.swift */,
+			);
+			path = "We Travel PlusTests";
+			sourceTree = "<group>";
+		};
+		8C90FC1F2D958F9A004FD5D5 /* We Travel PlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C90FC202D958F9A004FD5D5 /* We_Travel_PlusUITests.swift */,
+				8C90FC222D958F9A004FD5D5 /* We_Travel_PlusUITestsLaunchTests.swift */,
+			);
+			path = "We Travel PlusUITests";
+			sourceTree = "<group>";
+		};
+		8C90FC4A2D96E6BD004FD5D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8C90FC482D96E6A1004FD5D5 /* LoginViewController.swift */,
+				8C1263732DC1268B002D46A5 /* LoginInteractor.swift */,
+				8C1263752DC126BE002D46A5 /* LoginPresenter.swift */,
+				8C1263772DC56D02002D46A5 /* LoginModels.swift */,
+				8C1263792DC90828002D46A5 /* LoginRouter.swift */,
+				8C12637F2DCD0706002D46A5 /* LoginBuilder.swift */,
+				8CFFC2462DD5123F009A2BEE /* LoginProtocols.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8C90FC4B2D96E6F4004FD5D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8C12637B2DCCEDC3002D46A5 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C90FBFB2D958F91004FD5D5 /* We Travel Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C90FC262D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel Plus" */;
+			buildPhases = (
+				8C90FBF82D958F91004FD5D5 /* Sources */,
+				8C90FBF92D958F91004FD5D5 /* Frameworks */,
+				8C90FBFA2D958F91004FD5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "We Travel Plus";
+			packageProductDependencies = (
+				8C90FC342D959B85004FD5D5 /* FirebaseAnalyticsSwift */,
+				8C90FC362D959B85004FD5D5 /* FirebaseAuth */,
+				8C90FC382D959B85004FD5D5 /* FirebaseCrashlytics */,
+				8C90FC3A2D959B85004FD5D5 /* FirebaseDatabaseSwift */,
+				8C90FC3C2D959B85004FD5D5 /* FirebaseFirestoreSwift */,
+				8C90FC3E2D959B85004FD5D5 /* FirebaseInAppMessaging-Beta */,
+				8C90FC402D959B85004FD5D5 /* FirebaseMessaging */,
+				8C90FC432D959D83004FD5D5 /* GoogleSignInSwift */,
+				8C90FC462D959F71004FD5D5 /* MessageKit */,
+			);
+			productName = "We Travel Plus";
+			productReference = 8C90FBFC2D958F91004FD5D5 /* We Travel Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C90FC112D958F99004FD5D5 /* We Travel PlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C90FC292D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel PlusTests" */;
+			buildPhases = (
+				8C90FC0E2D958F99004FD5D5 /* Sources */,
+				8C90FC0F2D958F99004FD5D5 /* Frameworks */,
+				8C90FC102D958F99004FD5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C90FC142D958F99004FD5D5 /* PBXTargetDependency */,
+			);
+			name = "We Travel PlusTests";
+			productName = "We Travel PlusTests";
+			productReference = 8C90FC122D958F99004FD5D5 /* We Travel PlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C90FC1B2D958F9A004FD5D5 /* We Travel PlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C90FC2C2D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel PlusUITests" */;
+			buildPhases = (
+				8C90FC182D958F9A004FD5D5 /* Sources */,
+				8C90FC192D958F9A004FD5D5 /* Frameworks */,
+				8C90FC1A2D958F9A004FD5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C90FC1E2D958F9A004FD5D5 /* PBXTargetDependency */,
+			);
+			name = "We Travel PlusUITests";
+			productName = "We Travel PlusUITests";
+			productReference = 8C90FC1C2D958F9A004FD5D5 /* We Travel PlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C90FBF42D958F91004FD5D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8C90FBFB2D958F91004FD5D5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8C90FC112D958F99004FD5D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8C90FBFB2D958F91004FD5D5;
+					};
+					8C90FC1B2D958F9A004FD5D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8C90FBFB2D958F91004FD5D5;
+					};
+				};
+			};
+			buildConfigurationList = 8C90FBF72D958F91004FD5D5 /* Build configuration list for PBXProject "We Travel Plus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C90FBF32D958F91004FD5D5;
+			packageReferences = (
+				8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8C90FC422D959D83004FD5D5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				8C90FC452D959F71004FD5D5 /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
+			productRefGroup = 8C90FBFD2D958F91004FD5D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C90FBFB2D958F91004FD5D5 /* We Travel Plus */,
+				8C90FC112D958F99004FD5D5 /* We Travel PlusTests */,
+				8C90FC1B2D958F9A004FD5D5 /* We Travel PlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C90FBFA2D958F91004FD5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C90FC0C2D958F99004FD5D5 /* LaunchScreen.storyboard in Resources */,
+				8C90FC322D9599AB004FD5D5 /* GoogleService-Info.plist in Resources */,
+				8C90FC092D958F99004FD5D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC102D958F99004FD5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC1A2D958F9A004FD5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C90FBF82D958F91004FD5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1263742DC1268B002D46A5 /* LoginInteractor.swift in Sources */,
+				8C1263872DCE8323002D46A5 /* RegisterViewController.swift in Sources */,
+				8C1263782DC56D02002D46A5 /* LoginModels.swift in Sources */,
+				8C90FC492D96E6A1004FD5D5 /* LoginViewController.swift in Sources */,
+				8C12637C2DCCEDC3002D46A5 /* HomeViewController.swift in Sources */,
+				8C90FC002D958F91004FD5D5 /* AppDelegate.swift in Sources */,
+				8C90FC022D958F91004FD5D5 /* SceneDelegate.swift in Sources */,
+				8C1263802DCD0706002D46A5 /* LoginBuilder.swift in Sources */,
+				8C1263892DCE8623002D46A5 /* RegisterInteractor.swift in Sources */,
+				8CFFC2472DD5123F009A2BEE /* LoginProtocols.swift in Sources */,
+				8C12637A2DC90829002D46A5 /* LoginRouter.swift in Sources */,
+				8C1263762DC126BE002D46A5 /* LoginPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC0E2D958F99004FD5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C90FC172D958F9A004FD5D5 /* We_Travel_PlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C90FC182D958F9A004FD5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C90FC232D958F9A004FD5D5 /* We_Travel_PlusUITestsLaunchTests.swift in Sources */,
+				8C90FC212D958F9A004FD5D5 /* We_Travel_PlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C90FC142D958F99004FD5D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C90FBFB2D958F91004FD5D5 /* We Travel Plus */;
+			targetProxy = 8C90FC132D958F99004FD5D5 /* PBXContainerItemProxy */;
+		};
+		8C90FC1E2D958F9A004FD5D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C90FBFB2D958F91004FD5D5 /* We Travel Plus */;
+			targetProxy = 8C90FC1D2D958F9A004FD5D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C90FC0A2D958F99004FD5D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C90FC0B2D958F99004FD5D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C90FC242D958F9A004FD5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C90FC252D958F9A004FD5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C90FC272D958F9A004FD5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "We Travel Plus/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-Plus-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C90FC282D958F9A004FD5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "We Travel Plus/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-Plus-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C90FC2A2D958F9A004FD5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/We Travel Plus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/We Travel Plus";
+			};
+			name = Debug;
+		};
+		8C90FC2B2D958F9A004FD5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/We Travel Plus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/We Travel Plus";
+			};
+			name = Release;
+		};
+		8C90FC2D2D958F9A004FD5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "We Travel Plus";
+			};
+			name = Debug;
+		};
+		8C90FC2E2D958F9A004FD5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U38DQ4VSBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "isabelascardoso.We-Travel-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "We Travel Plus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C90FBF72D958F91004FD5D5 /* Build configuration list for PBXProject "We Travel Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C90FC242D958F9A004FD5D5 /* Debug */,
+				8C90FC252D958F9A004FD5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C90FC262D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C90FC272D958F9A004FD5D5 /* Debug */,
+				8C90FC282D958F9A004FD5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C90FC292D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel PlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C90FC2A2D958F9A004FD5D5 /* Debug */,
+				8C90FC2B2D958F9A004FD5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C90FC2C2D958F9A004FD5D5 /* Build configuration list for PBXNativeTarget "We Travel PlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C90FC2D2D958F9A004FD5D5 /* Debug */,
+				8C90FC2E2D958F9A004FD5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.0.0;
+			};
+		};
+		8C90FC422D959D83004FD5D5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+		8C90FC452D959F71004FD5D5 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C90FC342D959B85004FD5D5 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		8C90FC362D959B85004FD5D5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8C90FC382D959B85004FD5D5 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		8C90FC3A2D959B85004FD5D5 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		8C90FC3C2D959B85004FD5D5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		8C90FC3E2D959B85004FD5D5 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		8C90FC402D959B85004FD5D5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC332D959B85004FD5D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8C90FC432D959D83004FD5D5 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC422D959D83004FD5D5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		8C90FC462D959F71004FD5D5 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C90FC452D959F71004FD5D5 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C90FBF42D958F91004FD5D5 /* Project object */;
+}
